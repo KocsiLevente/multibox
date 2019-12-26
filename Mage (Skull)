@@ -11,8 +11,6 @@ target_skull()
 end
 end
 
-//A következő rész elég csak a "Mage (Skull)" vagy "Mage (Cross)" makróban!//
-
 function attack()
 local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
 if (UnitMana("player")>=221)
@@ -39,8 +37,6 @@ function fire_frost()
 cast("Fire Blast")
 cast("Frostbolt")
 end
-
-//Eddig!//
 
 function target_skull()
 TargetByName("Gaelber")
