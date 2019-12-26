@@ -5,13 +5,15 @@ LUA)
 function dps_skull()
 if (GetRaidTargetIndex("target")==8)
 then
-attack_skull()
+attack()
 else
 target_skull()
 end
 end
 
-function attack_skull()
+//A következő rész elég csak a "Mage (Skull)" vagy "Mage (Cross)" makróban!//
+
+function attack()
 local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
 if (UnitMana("player")>=221)
 then
@@ -37,6 +39,8 @@ function fire_frost()
 cast("Fire Blast")
 cast("Frostbolt")
 end
+
+//Eddig!//
 
 function target_skull()
 TargetByName("Gaelber")
