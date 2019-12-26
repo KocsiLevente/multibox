@@ -1,4 +1,4 @@
 # multibox
 World of Warcraft - Tauri Vanilla - Multibox
 
-Multiboxing Macros - Feel Free to Use
+Multiboxing macros for every class and cast, feel free to use!
