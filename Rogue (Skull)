@@ -5,13 +5,13 @@ LUA)
 function dps_skull()
 if (GetRaidTargetIndex("target")==8)
 then
-attack_skull()
+attack()
 else
 target_skull()
 end
 end
 
-function attack_skull()
+function attack()
 burst_dmg()
 sinister_eviscerate()
 end
