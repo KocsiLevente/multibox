@@ -1,0 +1,67 @@
+Rogue (Cross))
+/script dps_cross()
+
+LUA)
+function dps_cross()
+if (GetRaidTargetIndex("target")==7)
+then
+attack_cross()
+else
+target_cross()
+end
+end
+
+function attack_cross()
+burst_dmg()
+sinister_eviscerate()
+end
+
+function burst_dmg()
+if (GetComboPoints("target")>=1)
+then
+cast("Blade Flurry")
+cast("Adrenaline Rush")
+end
+end
+
+function sinister_eviscerate()
+if (GetComboPoints("target")==5)
+then
+cast("Eviscerate")
+else
+cast("Sinister Strike")
+end
+end
+
+function target_cross()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+tab_target_cross()
+end
+end
+
+function tab_target_cross()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
+end
+end
+end
