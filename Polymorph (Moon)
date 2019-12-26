@@ -1,0 +1,12 @@
+Polymorph)
+/script poly_moon()
+
+LUA)
+function poly_moon()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==5)
+then cast("Polymorph")
+end
+end
+end
