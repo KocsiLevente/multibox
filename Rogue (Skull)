@@ -1,0 +1,67 @@
+Rogue (Skull))
+/script dps_skull()
+
+LUA)
+function dps_skull()
+if (GetRaidTargetIndex("target")==8)
+then
+attack_skull()
+else
+target_skull()
+end
+end
+
+function attack_skull()
+burst_dmg()
+sinister_eviscerate()
+end
+
+function burst_dmg()
+if (GetComboPoints("target")>=1)
+then
+cast("Blade Flurry")
+cast("Adrenaline Rush")
+end
+end
+
+function sinister_eviscerate()
+if (GetComboPoints("target")==5)
+then
+cast("Eviscerate")
+else
+cast("Sinister Strike")
+end
+end
+
+function target_skull()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+tab_target_skull()
+end
+end
+
+function tab_target_skull()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
+end
+end
+end
