@@ -5,31 +5,9 @@ LUA)
 function dps_cross()
 if (GetRaidTargetIndex("target")==7)
 then
-attack_cross()
+attack()
 else
 target_cross()
-end
-end
-
-function attack_cross()
-burst_dmg()
-sinister_eviscerate()
-end
-
-function burst_dmg()
-if (GetComboPoints("target")>=1)
-then
-cast("Blade Flurry")
-cast("Adrenaline Rush")
-end
-end
-
-function sinister_eviscerate()
-if (GetComboPoints("target")==5)
-then
-cast("Eviscerate")
-else
-cast("Sinister Strike")
 end
 end
 
