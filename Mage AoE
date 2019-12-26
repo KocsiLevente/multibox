@@ -1,0 +1,9 @@
+Mage AoE)
+/script mage_aoe)
+
+LUA)
+function mage_aoe()
+cast("Frost Nova")
+cast("Cone of Cold")
+cast("Arcane Explosion")
+end
