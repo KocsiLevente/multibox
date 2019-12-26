@@ -5,13 +5,15 @@ LUA)
 function dps_cross()
 if (GetRaidTargetIndex("target")==7)
 then
-attack_cross()
+attack()
 else
 target_cross()
 end
 end
 
-function attack_cross()
+//A következő rész elég csak a "Mage (Skull)" vagy "Mage (Cross)" makróban!//
+
+function attack()
 local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
 if (UnitMana("player")>=221)
 then
@@ -37,6 +39,8 @@ function fire_frost()
 cast("Fire Blast")
 cast("Frostbolt")
 end
+
+//Eddig!//
 
 function target_cross()
 TargetByName("Gaelber")
