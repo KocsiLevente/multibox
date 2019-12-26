@@ -1,0 +1,72 @@
+Mage (Cross))
+/script dps_cross()
+
+LUA)
+function dps_cross()
+if (GetRaidTargetIndex("target")==7)
+then
+attack_cross()
+else
+target_cross()
+end
+end
+
+function attack_cross()
+local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
+if (UnitMana("player")>=221)
+then
+PickupAction(63)
+PlaceAction(62)
+fire_frost()
+else
+if (evoc==0)
+then
+cast("Evocation")
+else
+if not IsCurrentAction(62)
+then
+UseAction(62)
+PickupAction(62)
+PlaceAction(63)
+end
+end
+end
+end
+
+function fire_frost()
+cast("Fire Blast")
+cast("Frostbolt")
+end
+
+function target_cross()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+tab_target_cross()
+end
+end
+
+function tab_target_cross()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
+end
+end
+end
