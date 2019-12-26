@@ -11,37 +11,6 @@ target_cross()
 end
 end
 
-//A következő rész elég csak a "Mage (Skull)" vagy "Mage (Cross)" makróban!//
-
-function attack()
-local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
-if (UnitMana("player")>=221)
-then
-PickupAction(63)
-PlaceAction(62)
-fire_frost()
-else
-if (evoc==0)
-then
-cast("Evocation")
-else
-if not IsCurrentAction(62)
-then
-UseAction(62)
-PickupAction(62)
-PlaceAction(63)
-end
-end
-end
-end
-
-function fire_frost()
-cast("Fire Blast")
-cast("Frostbolt")
-end
-
-//Eddig!//
-
 function target_cross()
 TargetByName("Gaelber")
 TargetUnit("targettarget")
