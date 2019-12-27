@@ -1,0 +1,17 @@
+Priest AI(T))
+/target Gaelber
+/script h_60_t()
+/target Llanewrynn
+/script h_60_t()
+/target Cooperbeard
+/script h_60_t()
+/macro Priest AI(H2)
+
+LUA)
+function h_60_t()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then if (UnitHealth("target")/UnitHealthMax("target")<0.6)
+then cast("Heal")
+end
+end
+end
