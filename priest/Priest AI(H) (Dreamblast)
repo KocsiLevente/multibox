@@ -1,5 +1,4 @@
 Priest AI(H))
-/target Dreamblast
 /script fade()
 /target Kearlah
 /script h_50_h()
@@ -17,8 +16,9 @@ then cast("Flash Heal")
 end
 end
 end
+
 function fade()
-if (UnitHealth("target")/UnitHealthMax("target")<0.5)
+if (UnitHealth("player")/UnitHealthMax("player")<0.5)
 then cast("Fade")
 end
 end
