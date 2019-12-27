@@ -16,7 +16,7 @@ if (UnitMana("player")>=376)
 then
 PickupAction(63)
 PlaceAction(62)
-curse_dot_sh()
+curse_shadow()
 else
 if (UnitHealth("player")/UnitHealthMax("player")>0.3)
 then
@@ -32,7 +32,7 @@ end
 end
 end
 
-function curse_dot_sh()
+function curse_shadow()
 curse_of_agony()
 corruption_sh_bolt()
 end
