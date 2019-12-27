@@ -1,0 +1,45 @@
+Warlock (Cross))
+/script dps_cross()
+
+LUA)
+function dps_cross()
+if (GetRaidTargetIndex("target")==7)
+then
+attack()
+else
+target_cross()
+end
+end
+
+function target_cross()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+tab_target_cross()
+end
+end
+
+function tab_target_cross()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
+end
+end
+end
