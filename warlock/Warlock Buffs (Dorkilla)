@@ -30,7 +30,7 @@ i=i+1
 end
 if (x==0)
 then
-TargetByName("Helaith",true)
+TargetByName("Helaith")
 cast("Demonic Sacrifice")
 if (UnitMana("player")>=1373)
 then cast("Summon Succubus")
