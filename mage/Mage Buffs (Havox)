@@ -7,8 +7,6 @@ Mage Buffs)
 /script arcane_brilliance()
 /target Gaelber
 /script amplify_magic()
-/target Llanewrynn
-/script amplify_magic()
 
 LUA)
 function arcane_brilliance()
