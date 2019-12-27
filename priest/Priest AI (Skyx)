@@ -1,0 +1,19 @@
+Priest AI)
+/target Llanewrynn
+/script h_40_t()
+/target Gaelber
+/script h_40_t()
+/target Paladino
+/script h_40_t()
+/macro Priest AI(H)
+
+LUA)
+function h_40_t()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.4)
+then
+cast("Flash Heal")
+end
+end
+end
