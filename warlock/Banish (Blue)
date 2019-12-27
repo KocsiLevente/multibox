@@ -1,0 +1,12 @@
+Banish)
+/script banish_blue()
+
+LUA)
+function banish_blue()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==6)
+then cast("Banish")
+end
+end
+end
