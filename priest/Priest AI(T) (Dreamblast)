@@ -3,7 +3,7 @@ Priest AI(T))
 /script h_60_t()
 /target Llanewrynn
 /script h_60_t()
-/target Cooperbeard
+/target Paladino
 /script h_60_t()
 /macro Priest AI(H2)
 
