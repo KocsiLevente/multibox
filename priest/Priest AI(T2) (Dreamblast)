@@ -1,10 +1,6 @@
 Priest AI(T2))
 /target Gaelber
 /script h_90_t()
-/target Llanewrynn
-/script h_90_t()
-/target Paladino
-/script h_90_t()
 
 LUA)
 function h_90_t()
@@ -12,8 +8,6 @@ if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
 then
 if (UnitHealth("target")/UnitHealthMax("target")<0.9)
 then
-cast("Lesser Heal")
-else
 if (UnitMana("player")>=0.6)
 then
 cast("Power Word: Shield")
