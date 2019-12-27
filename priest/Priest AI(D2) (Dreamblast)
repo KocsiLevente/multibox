@@ -14,8 +14,10 @@ Priest AI(D2))
 LUA)
 function h_70_d()
 if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
-then if (UnitHealth("target")/UnitHealthMax("target")<0.7)
-then CastSpellByName("Heal")
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.7)
+then
+cast("Heal")
 end
 end
 end
