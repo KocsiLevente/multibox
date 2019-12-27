@@ -1,0 +1,101 @@
+Warlock (Skull))
+/script dps_skull()
+
+LUA)
+function dps_skull()
+if (GetRaidTargetIndex("target")==8)
+then
+attack()
+else
+target_skull()
+end
+end
+
+function attack()
+if (UnitMana("player")>=376)
+then
+PickupAction(63)
+PlaceAction(62)
+curse_shadow()
+else
+if (UnitHealth("player")/UnitHealthMax("player")>0.3)
+then
+cast("Life Tap")
+else
+if not IsCurrentAction(62)
+then
+UseAction(62)
+PickupAction(62)
+PlaceAction(63)
+end
+end
+end
+end
+
+function curse_shadow()
+curse_of_shadow()
+corruption_sh_bolt()
+end
+
+function curse_of_shadow()
+local i,x=1,0
+while (UnitDebuff("target",i))
+do if (UnitDebuff("target",i)=="Interface\\Icons\\Spell_Shadow_CurseOfAchimonde")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then
+cast("Curse of Shadow")
+end
+end
+
+function corruption_sh_bolt()
+local i,x=1,0
+while (UnitDebuff("target",i))
+do if (UnitDebuff("target",i)=="Interface\\Icons\\Spell_Shadow_AbominationExplosion")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then
+cast("Corruption")
+else
+cast("Shadow Bolt")
+end
+end
+
+function target_skull()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+tab_target_skull()
+end
+end
+
+function tab_target_skull()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
+end
+end
+end
