@@ -1,0 +1,11 @@
+Shackle Undead)
+/script shackle_yellow()
+
+LUA)
+function shackle_yellow()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==1) then cast("Shackle Undead")
+end
+end
+end
