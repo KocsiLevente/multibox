@@ -1,0 +1,26 @@
+Priest P5)
+/script party_five()
+
+LUA)
+function party_five()
+TargetUnit("player")
+party_h_70()
+TargetUnit("party1")
+party_h_70()
+TargetUnit("party2")
+party_h_70()
+TargetUnit("party3")
+party_h_70()
+TargetUnit("party4")
+party_h_70()
+end
+
+function party_h_70()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.7)
+then
+cast("Heal")
+end
+end
+end
