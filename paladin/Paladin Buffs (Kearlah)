@@ -1,17 +1,19 @@
 Paladin Buffs)
 /target Gaelber
-/script blessing_of_light()
+/script bless_of_light()
 /target Kearlah
-/script blessing_of_wisdom()
+/script bless_of_wis()
 /target Dreamblast
-/script blessing_of_wisdom()
+/script bless_of_wis()
 /target Dorkilla
-/script blessing_of_kings()
+/script bless_of_kings()
 /target Havox
-/script blessing_of_kings()
+/script bless_of_kings()
+/target Dorothy
+/script bless_of_kings()
 
 LUA)
-function blessing_of_light()
+function bless_of_light()
 local i,x=1,0
 while (UnitBuff("target",i))
 do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_GreaterBlessingofLight")
@@ -24,7 +26,7 @@ then cast("Greater Blessing of Light")
 end
 end
 
-function blessing_of_wisdom()
+function bless_of_wis()
 local i,x=1,0
 while (UnitBuff("target",i))
 do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_GreaterBlessingofWisdom")
@@ -37,7 +39,7 @@ then cast("Greater Blessing of Wisdom")
 end
 end
 
-function blessing_of_kings()
+function bless_of_kings()
 local i,x=1,0
 while (UnitBuff("target",i))
 do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Magic_GreaterBlessingofKings")
