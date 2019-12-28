@@ -1,0 +1,18 @@
+Tank (Cross))
+/script tank_cross()
+
+LUA)
+function tank_cross()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==7)
+then
+if (UnitMana("player")>=12)
+then
+cast("Sunder Armor")
+else
+cast("Bloodrage")
+end
+end
+end
+end
