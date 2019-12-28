@@ -40,7 +40,7 @@ end
 function blessing_of_kings()
 local i,x=1,0
 while (UnitBuff("target",i))
-do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_GreaterBlessingofKings")
+do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Magic_GreaterBlessingofKings")
 then x=1
 end
 i=i+1
