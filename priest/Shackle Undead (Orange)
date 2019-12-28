@@ -5,7 +5,9 @@ LUA)
 function shackle_orange()
 for i=1,10
 do TargetNearestEnemy()
-if (GetRaidTargetIndex("target")==2) then cast("Shackle Undead")
+if (GetRaidTargetIndex("target")==2)
+then
+cast("Shackle Undead")
 end
 end
 end
