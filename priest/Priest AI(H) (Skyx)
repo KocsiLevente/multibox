@@ -1,0 +1,27 @@
+Priest AI(H))
+/script fade()
+/target Kearlah
+/script h_50_h()
+/target Uyalin
+/script h_50_h()
+/target Dreamblast
+/script h_50_h()
+/macro Priest AI(D)
+
+LUA)
+function h_50_h()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.5)
+then
+cast("Flash Heal")
+end
+end
+end
+
+function fade()
+if (UnitHealth("player")/UnitHealthMax("player")<0.5)
+then
+cast("Fade")
+end
+end
