@@ -6,7 +6,7 @@ LUA)
 function h_90_t()
 if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
 then
-if (UnitHealth("target")/UnitHealthMax("target")<0.9)
+if (UnitHealth("target")/UnitHealthMax("target")>0.9)
 then
 if (UnitMana("player")>=0.6)
 then
