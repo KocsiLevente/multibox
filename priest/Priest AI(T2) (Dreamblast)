@@ -1,12 +1,12 @@
 Priest AI(T2))
 /target Gaelber
-/script h_90_t()
+/script h_70_t()
 
 LUA)
-function h_90_t()
+function h_70_t()
 if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
 then
-if (UnitHealth("target")/UnitHealthMax("target")>0.9)
+if (UnitHealth("target")/UnitHealthMax("target")>0.7)
 then
 if (UnitMana("player")>=0.6)
 then
