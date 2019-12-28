@@ -1,0 +1,23 @@
+Priest AI(D))
+/target Dorkilla
+/script h_50_d()
+/target Necropoly
+/script h_50_d()
+/target Reimus
+/script h_50_d()
+/target Eoro
+/script h_50_d()
+/target Livingbomb
+/script h_50_d()
+/macro Priest AI(T)
+
+LUA)
+function h_50_d()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.5)
+then
+cast("Heal")
+end
+end
+end
