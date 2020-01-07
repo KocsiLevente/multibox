@@ -4,7 +4,6 @@ Fear Ward)
 /target Gaelber
 /script fear_ward()
 
-
 LUA)
 function fear_ward()
 local i,x=1,0
