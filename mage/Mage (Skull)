@@ -17,7 +17,7 @@ if (UnitMana("player")>=221)
 then
 PickupAction(63)
 PlaceAction(62)
-fire_frost()
+frost()
 else
 if (evoc==0)
 then
@@ -33,8 +33,7 @@ end
 end
 end
 
-function fire_frost()
-cast("Fire Blast")
+function frost()
 cast("Frostbolt")
 end
 
