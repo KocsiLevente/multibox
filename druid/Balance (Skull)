@@ -1,1 +1,53 @@
+Balance (Skull))
+/script dps_skull()
 
+LUA)
+function dps_skull()
+if (GetRaidTargetIndex("target")==8)
+then
+attack()
+else
+target_skull()
+end
+end
+
+function attack()
+
+end
+
+function frost()
+
+end
+
+function target_skull()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+tab_target_skull()
+end
+end
+
+function tab_target_skull()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
+end
+end
+end
