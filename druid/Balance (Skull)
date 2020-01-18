@@ -12,11 +12,8 @@ end
 end
 
 function attack()
-
-end
-
-function frost()
-
+CastSpellByName("Starfire(Rank 7)")
+CastSpellByName("Starfire(Rank 4)")
 end
 
 function target_skull()
