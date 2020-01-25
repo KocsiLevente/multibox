@@ -7,12 +7,11 @@ end
 -- IMP
 function warlock_buffs_imp()
     demon_armor()
-    demonic_sacrifice()
+    summon_imp()
 end
 
 function demon_armor()
-    TargetUnit("player")
-    if target_has_buff("Spell_Shadow_RagingScream") then
+    if self_has_buff("Spell_Shadow_RagingScream") then
         return
     end
     if (UnitMana("player")>=1580) then
@@ -23,8 +22,7 @@ function demon_armor()
 end
 
 function demonic_sacrifice()
-    TargetUnit("player")
-    if target_has_buff("Spell_Shadow_PsychicScream") then
+    if player_has_buff("Spell_Shadow_PsychicScream") then
         return
     end
     cast("Demonic Sacrifice")
@@ -37,8 +35,7 @@ function demonic_sacrifice()
 end
 
 function summon_imp()
-    TargetUnit("player")
-    if target_has_buff("Spell_Shadow_BloodBoil") then
+    if player_has_buff("Spell_Shadow_BloodBoil") then
         return
     end
     if (UnitMana("player")>=1000) then

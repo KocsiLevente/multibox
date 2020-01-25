@@ -1,3 +1,15 @@
+function banish_star()
+    banish_by_icon(1)
+end
+
+function banish_orange()
+    banish_by_icon(2)
+end
+
+function banish_purple()
+    banish_by_icon(3)
+end
+
 function banish_green()
     banish_by_icon(4)
 end
@@ -12,7 +24,7 @@ end
 
 function banish_by_icon(icon)
     target_by_icon(icon)
-    if (GetRaidTargetIndex("target")==6 then
+    if (GetRaidTargetIndex("target") == icon then
         cast("Banish")
     end
 end

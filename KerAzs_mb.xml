@@ -4,4 +4,6 @@
 	<Script file="caster_core.lua"/>
 	<Include file="warrior\warrior.xml"/>
 	<Include file="warlock\warlock.xml"/>
+	<Include file="priest\priest.xml"/>
+	<Include file="mage\mage.xml"/>
 </Ui>

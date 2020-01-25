@@ -1,4 +1,4 @@
 function warlock_aoe()
-    if castingOrChanneling() then return end
+    if casting_or_channeling() then return end
     cast("Hellfire")
 end

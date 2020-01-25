@@ -12,7 +12,7 @@ function warlock_skull_coa()
 end
 
 function warlock_skull(curse)
-	if (GetRaidTargetIndex("target")==8) then
+	if is_target_skull() then
 		warlock_attack(curse)
 	else
 		target_skull()
@@ -33,7 +33,7 @@ function warlock_cross_coa()
 end
 
 function warlock_cross()
-	if (GetRaidTargetIndex("target")==8) then
+	if is_target_cross() then
 		warlock_attack("CoS")
 	else
 		target_skull()

@@ -1,5 +1,20 @@
 tank_list = {"Copperbeard", "Liberton", "Gaelber", "LLanewryn"}
 
+group_list = {
+	[1] = {
+		tank="Cooperbeard",
+		heal="Baleog",
+		dps_list={"Daemona", "Azsgrof", "Jaliana", "Carla"}
+	},
+	[2] = {
+		tank="Liberton",
+		heal="Lionel",
+		dps_list={"PinkyPe", "Fabregas", "Windou"}
+	},
+	[3] = {},
+	[4] = {}
+}
+
 -- test command:
 -- RunLine("/say " .. "test" )
 
@@ -10,6 +25,10 @@ function is_tank_by_name(name)
 	return nil
 end
 
+function is_target_hp_over(percent)
+	return UnitHealth("target") / UnitHealthMax("target") > percent
+end
+
 function is_target_hp_under(percent)
 	return UnitHealth("target") / UnitHealthMax("target") < percent
 end
@@ -18,23 +37,35 @@ function is_player_hp_over(percent)
 	return UnitHealth("player") / UnitHealthMax("player") > percent
 end
 
+function is_player_hp_under(percent)
+	return UnitHealth("player") / UnitHealthMax("player") < percent
+end
+
 function get_rage()
     return UnitMana("player")
 end
 
-function targetCross()
+function target_cross()
 	target_by_icon(7)
+end
+
+function is_target_cross()
+	return (GetRaidTargetIndex("target") == 7)
 end
 
 function target_skull()
 	target_by_icon(8)
 end
 
+function is_target_skull()
+	return (GetRaidTargetIndex("target") == 8)
+end
+
 function target_by_icon(icon)
 	for k,tank in pairs(tank_list) do
 		TargetByName(tank)
 		TargetUnit("targettarget")
-		if (GetRaidTargetIndex("target")==icon) then
+		if (GetRaidTargetIndex("target") == icon) then
 			return
 		end
 	end
@@ -44,7 +75,7 @@ end
 function tab_target_by_icon(icon)
 	for i=1,10 do
 		TargetNearestEnemy()
-		if (GetRaidTargetIndex("target")==icon) then
+		if (GetRaidTargetIndex("target") == icon) then
 			return
 		end
 	end
@@ -59,7 +90,7 @@ end
 function target_has_debuff(icon)
 	local i,x=1,0
 	while (UnitDebuff("target",i)) do
-		if (UnitDebuff("target",i) == ("Interface\\Icons\\" + icon)) then
+		if (UnitDebuff("target",i) == ("Interface\\Icons\\" .. icon)) then
 			x=1
 		end
 		i=i+1
@@ -75,12 +106,41 @@ end
 function target_has_buff(icon)
 	local i,x=1,0
 	while (UnitBuff("target",i)) do
-		if (UnitBuff("target",i) == ("Interface\\Icons\\" + icon)) then
+		if (UnitBuff("target",i) == ("Interface\\Icons\\" .. icon)) then
 			x=1
 		end
 		i=i+1
 	end
 	return x == 1
+end
+
+function cast_buff_player(icon, spell_name)
+	if self_has_buff(icon) then return end
+	cast(spell_name)
+end
+
+function player_has_buff(icon)
+	local i,x=1,0
+	while (UnitBuff("player",i)) do
+		if (UnitBuff("player",i) == ("Interface\\Icons\\" .. icon)) then
+			x=1
+		end
+		i=i+1
+	end
+	return x == 1
+end
+
+function stop_autoattack()
+	PickupAction(63)
+	PlaceAction(62)
+end
+
+function use_autoattack()
+	if not IsCurrentAction(62) and not IsCurrentAction(63) then
+		UseAction(62)
+		PickupAction(62)
+		PlaceAction(63)
+	end
 end
 
 --KerAzs = CreateFrame("Button","KerAzs",UIParent)
