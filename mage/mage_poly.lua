@@ -24,7 +24,7 @@ end
 
 function poly_by_icon(icon)
     target_by_icon(icon)
-    if (GetRaidTargetIndex("target") == icon then
+    if (GetRaidTargetIndex("target") == icon) then
         cast("Polymorph")
     end
 end
