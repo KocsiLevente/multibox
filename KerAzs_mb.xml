@@ -6,4 +6,6 @@
 	<Include file="warlock\warlock.xml"/>
 	<Include file="priest\priest.xml"/>
 	<Include file="mage\mage.xml"/>
+	<Include file="pala\pala.xml"/>
+	<Include file="rouge\rouge.xml"/>
 </Ui>

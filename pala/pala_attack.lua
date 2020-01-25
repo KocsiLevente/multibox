@@ -1,6 +1,6 @@
 function pala_attack_cross()
     if is_target_cross() then
-        paladin_attack()
+        pala_attack()
     else
         stop_autoattack()
         target_cross()
