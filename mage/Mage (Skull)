@@ -21,7 +21,10 @@ frost()
 else
 if (evoc==0)
 then
+if not CastingBarFrame.channeling
+then
 cast("Evocation")
+end
 else
 if not IsCurrentAction(62)
 then
