@@ -1,0 +1,10 @@
+Hellfire)
+/script hellfire()
+
+LUA)
+function hellfire()
+if not CastingBarFrame.channeling
+then
+cast("Hellfire")
+end
+end
