@@ -5,9 +5,9 @@ Paladin AI(D))
 /script h_60_d()
 /target Livingbomb
 /script h_60_d()
-/target Necropoly
+/target Dorothy
 /script h_60_d()
-/target Reimus
+/target Skyfire
 /script h_60_d()
 
 LUA)
