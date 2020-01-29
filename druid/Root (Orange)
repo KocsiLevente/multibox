@@ -1,0 +1,12 @@
+Root)
+/script root_orange()
+
+LUA)
+function root_orange()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==2)
+then cast("Entangling Roots")
+end
+end
+end
