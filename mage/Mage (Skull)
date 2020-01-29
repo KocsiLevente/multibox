@@ -13,6 +13,8 @@ end
 
 function attack()
 local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
+if not CastingBarFrame.channeling
+then
 if (UnitMana("player")>=221)
 then
 PickupAction(63)
@@ -21,16 +23,14 @@ frost()
 else
 if (evoc==0)
 then
-if not CastingBarFrame.channeling
-then
 cast("Evocation")
-end
 else
 if not IsCurrentAction(62)
 then
 UseAction(62)
 PickupAction(62)
 PlaceAction(63)
+end
 end
 end
 end
