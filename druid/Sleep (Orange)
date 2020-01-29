@@ -1,0 +1,12 @@
+Sleep)
+/script sleep_orange()
+
+LUA)
+function sleep_orange()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==2)
+then cast("Hibernate")
+end
+end
+end
