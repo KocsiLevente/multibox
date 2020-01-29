@@ -1,13 +1,13 @@
 Priest AI(D))
-/target Dorkilla
+/target Livingbomb
 /script h_50_d()
-/target Necropoly
+/target Havox
 /script h_50_d()
 /target Reimus
 /script h_50_d()
-/target Eoro
+/target Necropoly
 /script h_50_d()
-/target Livingbomb
+/target Dorkilla
 /script h_50_d()
 /macro Priest AI(T)
 
