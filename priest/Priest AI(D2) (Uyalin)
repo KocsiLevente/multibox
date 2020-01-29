@@ -1,11 +1,11 @@
 Priest AI(D2))
-/target Dorothy
-/script h_70_d()
-/target Necropoly
-/script h_70_d()
 /target Reimus
 /script h_70_d()
-/target Livingbomb
+/target Skyfire
+/script h_70_d()
+/target Dorothy
+/script h_70_d()
+/target Dorkilla
 /script h_70_d()
 /target Havox
 /script h_70_d()
