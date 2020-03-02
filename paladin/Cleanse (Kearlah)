@@ -1,14 +1,14 @@
 Cleanse)
 /target Gaelber
-/script decurse()
+/script cleanse()
 /target Kearlah
-/script decurse()
+/script cleanse()
 /target Dreamblast
-/script decurse()
+/script cleanse()
 /target Havox
-/script decurse()
+/script cleanse()
 /target Dorkilla
-/script decurse()
+/script cleanse()
 
 LUA)
 function cleanse()
