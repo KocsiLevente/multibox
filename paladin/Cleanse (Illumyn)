@@ -1,0 +1,22 @@
+Cleanse)
+/target Yxon
+/script cleanse()
+/target Illumyn
+/script cleanse()
+/target Uyalin
+/script cleanse()
+/target Eoro
+/script cleanse()
+/target Necropoly
+/script cleanse()
+
+LUA)
+function cleanse()
+for x=1,16 do
+local name,count,debuffType=UnitDebuff("target",x,1)
+if (debuffType=="Magic" or debuffType=="Disease" or debuffType=="Poison")
+then
+cast("Cleanse")
+end
+end
+end
