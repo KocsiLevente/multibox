@@ -6,7 +6,7 @@ Paladin Buffs)
 /target Dreamblast
 /script kings()
 /target Dorkilla
-/script b_of_kings()
+/script kings()
 /target Havox
 /script kings()
 /target Dorothy
