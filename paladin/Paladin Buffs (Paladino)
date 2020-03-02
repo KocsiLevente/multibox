@@ -1,19 +1,21 @@
 Paladin Buffs)
 /target Gaelber
-/script bless_of_sanc()
+/script sanc()
 /target Kearlah
-/script bless_of_sanc()
+/script sanc()
 /target Dreamblast
-/script bless_of_salv)
+/script salv()
 /target Dorkilla
-/script bless_of_salv()
+/script salv()
 /target Havox
-/script bless_of_salv()
+/script salv()
 /target Dorothy
-/script bless_of_salv()
+/script salv()
+/target Skyfire
+/script salv()
 
 LUA)
-function bless_of_sanc()
+function sanc()
 local i,x=1,0
 while (UnitBuff("target",i))
 do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_GreaterBlessingofSanctuary")
@@ -26,7 +28,7 @@ then cast("Greater Blessing of Sanctuary")
 end
 end
 
-function bless_of_salv()
+function salv()
 local i,x=1,0
 while (UnitBuff("target",i))
 do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_GreaterBlessingofSalvation")
