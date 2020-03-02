@@ -1,14 +1,14 @@
 Cleanse)
 /target Llanewrynn
-/script decurse()
+/script cleanse()
 /target Paladino
-/script decurse()
+/script cleanse()
 /target Skyx
-/script decurse()
+/script cleanse()
 /target Livingbomb
-/script decurse()
+/script cleanse()
 /target Reimus
-/script decurse()
+/script cleanse()
 
 LUA)
 function cleanse()
