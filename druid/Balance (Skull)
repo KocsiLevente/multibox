@@ -16,7 +16,22 @@ CastSpellByName("Starfire(Rank 7)")
 CastSpellByName("Starfire(Rank 4)")
 end
 
+function moonkin_form()
+local i,x=1,0
+while (UnitBuff("target",i))
+do if (UnitBuff("player",i)=="Interface\\Icons\\Spell_Nature_Moonglow")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then cast("Moonkin Form")
+end
+end
+
 function target_skull()
+TargetByName("Skyfire")
+moonkin_form()
 TargetByName("Gaelber")
 TargetUnit("targettarget")
 if (GetRaidTargetIndex("target")==8)
