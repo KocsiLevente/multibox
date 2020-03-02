@@ -1,0 +1,29 @@
+Paladin Buffs)
+/target Gaelber
+/script light()
+/target Kearlah
+/script light()
+/target Dreamblast
+/script light()
+/target Dorkilla
+/script light()
+/target Havox
+/script light()
+/target Dorothy
+/script light()
+/target Skyfire
+/script light()
+
+LUA)
+function light()
+local i,x=1,0
+while (UnitBuff("target",i))
+do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_GreaterBlessingofLight")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then cast("Greater Blessing of Light")
+end
+end
