@@ -1,0 +1,22 @@
+Cleanse)
+/target Llanewrynn
+/script decurse()
+/target Paladino
+/script decurse()
+/target Skyx
+/script decurse()
+/target Livingbomb
+/script decurse()
+/target Reimus
+/script decurse()
+
+LUA)
+function cleanse()
+for x=1,16 do
+local name,count,debuffType=UnitDebuff("target",x,1)
+if (debuffType=="Magic" or debuffType=="Disease" or debuffType=="Poison")
+then
+cast("Cleanse")
+end
+end
+end
