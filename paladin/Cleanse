@@ -1,0 +1,22 @@
+Cleanse)
+/target Gaelber
+/script decurse()
+/target Kearlah
+/script decurse()
+/target Dreamblast
+/script decurse()
+/target Havox
+/script decurse()
+/target Dorkilla
+/script decurse()
+
+LUA)
+function cleanse()
+for x=1,16 do
+local name,count,debuffType=UnitDebuff("target",x,1)
+if (debuffType=="Magic" || debuffType=="Disease" || debuffType=="Poison")
+then
+cast("Cleanse")
+end
+end
+end
