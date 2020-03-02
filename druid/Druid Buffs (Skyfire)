@@ -1,9 +1,14 @@
 Druid Buffs)
 /target Skyfire
 /script gift_wild()
-/target Paladino
-/script gift_wild()
 /target Gaelber
+/script gift_wild()
+/script thorns()
+/target Dreamblast
+/script gift_wild()
+/target Uyalin
+/script gift_wild()
+/target Llanewrynn
 /script thorns()
 
 LUA)
