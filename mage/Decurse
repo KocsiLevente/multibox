@@ -1,8 +1,0 @@
-Decurse)
-/script decurse()
-
-LUA)
-function decurse()
-TargetByName("Gaelber")
-cast("Remove Lesser Curse")
-end
