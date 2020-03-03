@@ -1,0 +1,18 @@
+Dispel)
+/target Yxon
+/script dispel()
+/target Vibranium
+/script dispel()
+/target Dorothy
+/script dispel()
+
+LUA)
+function dispel()
+for x=1,16 do
+local name,count,debuffType=UnitDebuff("target",x,1)
+if (debuffType=="Magic")
+then
+cast("Dispel Magic")
+end
+end
+end
