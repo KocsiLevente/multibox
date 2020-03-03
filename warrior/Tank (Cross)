@@ -9,6 +9,8 @@ if (GetRaidTargetIndex("target")==7)
 then
 if (UnitMana("player")>=12)
 then
+cast("Shield Slam")
+cast("Revenge")
 cast("Sunder Armor")
 else
 cast("Bloodrage")
