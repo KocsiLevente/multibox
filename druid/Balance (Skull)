@@ -19,7 +19,7 @@ end
 function moonkin_form()
 local i,x=1,0
 while (UnitBuff("target",i))
-do if (UnitBuff("player",i)=="Interface\\Icons\\Spell_Nature_Moonglow")
+do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Nature_Moonglow")
 then x=1
 end
 i=i+1
