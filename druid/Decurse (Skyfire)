@@ -16,14 +16,14 @@ LUA)
 function moonkin_form_off()
 local i,x=1,0
 while (UnitBuff("target",i))
-do if not (UnitBuff("target",i)=="Interface\\Icons\\Spell_Nature_ForceOfNature")
+do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Nature_ForceOfNature")
 then x=1
 end
 i=i+1
 end
-if (x==0)
+if (x==1)
 then
-else cast("Moonkin Form")
+cast("Moonkin Form")
 end
 end
 
