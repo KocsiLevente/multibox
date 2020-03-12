@@ -1,8 +1,0 @@
-Target Spawn)
-/script target_spawn()
-
-LUA)
-function target_spawn()
-TargetByName("Lava Spawn")
-SetRaidTarget("target",8)
-end
