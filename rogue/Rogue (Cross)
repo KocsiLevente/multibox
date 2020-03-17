@@ -27,6 +27,14 @@ then
 SendChatMessage("Targeted %t!")
 return
 else
+TargetByName("Yxon")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
 tab_target_cross()
 end
 end
