@@ -28,7 +28,22 @@ end
 end
 
 function shadow_priest()
+shadow_pain()
 cast("Mind Blast")
+end
+
+function shadow_pain()
+local i,x=1,0
+while (UnitDebuff("target",i))
+do if (UnitDebuff("target",i)=="Interface\\Icons\\Shadow_ShadowWordPain")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then
+cast("Shadow Word: Pain")
+end
 end
 
 function target_skull()
