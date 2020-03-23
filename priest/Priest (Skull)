@@ -35,7 +35,7 @@ end
 function shadow_pain()
 local i,x=1,0
 while (UnitDebuff("target",i))
-do if (UnitDebuff("target",i)=="Interface\\Icons\\Shadow_ShadowWordPain")
+do if (UnitDebuff("target",i)=="Interface\\Icons\\Spell_Shadow_ShadowWordPain")
 then x=1
 end
 i=i+1
