@@ -1,0 +1,19 @@
+Paladin AI)
+/target Yxon
+/script h_80_t()
+/target Llanewrynn
+/script h_80_t()
+/target Gaelber
+/script h_80_t()
+/macro Paladin AI(H)
+
+LUA)
+function h_80_t()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.8)
+then
+cast("Flash of Light")
+end
+end
+end
