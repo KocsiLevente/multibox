@@ -1,0 +1,22 @@
+Paladin AI(D))
+/target Tygerra
+/script h_60_d()
+/target Vibranium
+/script h_60_d()
+/target Lazarrus
+/script h_60_d()
+/target Dorothy
+/script h_60_d()
+/target Skyfire
+/script h_60_d()
+
+LUA)
+function h_60_d()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.6)
+then
+cast("Flash of Light")
+end
+end
+end
