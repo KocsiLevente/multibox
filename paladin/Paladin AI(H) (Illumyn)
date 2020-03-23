@@ -1,0 +1,21 @@
+Paladin AI(H))
+/target Illumyn
+/script h_70_h()
+/target Kearlah
+/script h_70_h()
+/target Uyalin
+/script h_70_h()
+/target Dreamblast
+/script h_70_h()
+/macro Paladin AI(D)
+
+LUA)
+function h_70_h()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.7)
+then
+cast("Flash of Light")
+end
+end
+end
