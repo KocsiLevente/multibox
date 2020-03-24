@@ -3,7 +3,7 @@ Paladin AI)
 /script h_80_t()
 /target Llanewrynn
 /script h_80_t()
-/target Paladino
+/target Yxon
 /script h_80_t()
 /macro Paladin AI(H)
 
