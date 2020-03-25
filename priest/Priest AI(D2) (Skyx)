@@ -1,13 +1,15 @@
 Priest AI(D2))
-/target Livingbomb
-/script h_70_d()
-/target Havox
-/script h_70_d()
 /target Reimus
 /script h_70_d()
-/target Necropoly
+/target Dorothy
 /script h_70_d()
-/target Dorkilla
+/target Eoro
+/script h_70_d()
+/target Livingbomb
+/script h_70_d()
+/target Vibranium
+/script h_70_d()
+/target Tygerra
 /script h_70_d()
 /macro Priest AI(T2)
 
