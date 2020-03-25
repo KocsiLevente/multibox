@@ -3,9 +3,11 @@ Priest AI(H2))
 /script h_70_h()
 /target Kearlah
 /script h_70_h()
-/target Skyx
+/target Illumyn
 /script h_70_h()
 /target Uyalin
+/script h_70_h()
+/target Skyx
 /script h_70_h()
 /macro Priest AI(D2)
 
