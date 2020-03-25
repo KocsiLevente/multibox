@@ -1,10 +1,12 @@
 Priest AI(H))
 /script fade()
+/target Dreamblast
+/script h_50_h()
 /target Kearlah
 /script h_50_h()
-/target Uyalin
+/target Illumyn
 /script h_50_h()
-/target Dreamblast
+/target Uyalin
 /script h_50_h()
 /macro Priest AI(D)
 
