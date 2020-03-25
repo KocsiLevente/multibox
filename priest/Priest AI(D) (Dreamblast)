@@ -1,13 +1,15 @@
 Priest AI(D))
-/target Necropoly
-/script h_50_d()
-/target Reimus
-/script h_50_d()
 /target Dorkilla
+/script h_50_d()
+/target Vibranium
+/script h_50_d()
+/target Lazarrus
 /script h_50_d()
 /target Livingbomb
 /script h_50_d()
-/target Eoro
+/target Reimus
+/script h_50_d()
+/target Havox
 /script h_50_d()
 /macro Priest AI(T)
 
