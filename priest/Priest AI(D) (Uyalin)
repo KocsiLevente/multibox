@@ -1,13 +1,15 @@
 Priest AI(D))
-/target Reimus
+/target Necropoly
+/script h_50_d()
+/target Tygerra
+/script h_50_d()
+/target Havox
 /script h_50_d()
 /target Skyfire
 /script h_50_d()
-/target Dorothy
-/script h_50_d()
 /target Dorkilla
 /script h_50_d()
-/target Havox
+/target Lazarrus
 /script h_50_d()
 /macro Priest AI(T)
 
