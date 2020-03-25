@@ -1,9 +1,9 @@
 Priest AI)
-/target Paladino
-/script h_40_t()
-/target Llanewrynn
+/target Yxon
 /script h_40_t()
 /target Gaelber
+/script h_40_t()
+/target Llanewrynn
 /script h_40_t()
 /macro Priest AI(H)
 
