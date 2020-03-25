@@ -1,7 +1,7 @@
 Paladin AI)
-/target Yxon
-/script h_80_t()
 /target Llanewrynn
+/script h_80_t()
+/target Yxon
 /script h_80_t()
 /target Gaelber
 /script h_80_t()
