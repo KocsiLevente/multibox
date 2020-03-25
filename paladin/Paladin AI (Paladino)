@@ -5,6 +5,8 @@ Paladin AI)
 /script h_85_t()
 /target Yxon
 /script h_85_t()
+/target Paladino
+/script h_85_t()
 
 LUA)
 function h_85_t()
