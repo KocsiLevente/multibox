@@ -1,13 +1,15 @@
 Paladin AI(D))
 /target Havox
 /script h_60_d()
-/target Eoro
-/script h_60_d()
 /target Livingbomb
 /script h_60_d()
-/target Dorothy
+/target Reimus
 /script h_60_d()
-/target Skyfire
+/target Vibranium
+/script h_60_d()
+/target Tygerra
+/script h_60_d()
+/target Paladino
 /script h_60_d()
 
 LUA)
