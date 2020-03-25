@@ -1,13 +1,15 @@
 Paladin AI(D))
-/target Tygerra
+/target Eoro
 /script h_60_d()
-/target Vibranium
+/target Skyfire
+/script h_60_d()
+/target Dorkilla
 /script h_60_d()
 /target Lazarrus
 /script h_60_d()
-/target Dorothy
+/target Necropoly
 /script h_60_d()
-/target Skyfire
+/target Dorothy
 /script h_60_d()
 
 LUA)
