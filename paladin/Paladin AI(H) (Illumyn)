@@ -1,11 +1,13 @@
 Paladin AI(H))
 /target Illumyn
 /script h_70_h()
-/target Kearlah
-/script h_70_h()
 /target Uyalin
 /script h_70_h()
+/target Skyx
+/script h_70_h()
 /target Dreamblast
+/script h_70_h()
+/target Kearlah
 /script h_70_h()
 /macro Paladin AI(D)
 
