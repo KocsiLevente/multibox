@@ -1,5 +1,5 @@
 Priest AI(T2))
-/target Paladino
+/target Yxon
 /script h_70_t()
 
 LUA)
