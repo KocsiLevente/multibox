@@ -1,4 +1,5 @@
 Bear)
+/target Yxon
 /script bear_form()
 
 LUA)
