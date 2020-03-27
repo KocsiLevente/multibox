@@ -3,10 +3,15 @@ Tank (Cross))
 
 LUA)
 function tank_cross()
-for i=1,10
-do TargetNearestEnemy()
 if (GetRaidTargetIndex("target")==7)
 then
+tank()
+else
+tab_target_cross()
+end
+end
+
+function tank()
 if (UnitMana("player")>=12)
 then
 cast("Shield Slam")
@@ -15,6 +20,17 @@ cast("Sunder Armor")
 else
 cast("Bloodrage")
 end
+end
+
+function tab_target_cross()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Targeted %t!")
+return
+else
+TargetUnit("player")
 end
 end
 end
