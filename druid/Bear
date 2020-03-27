@@ -1,0 +1,16 @@
+Bear)
+/script bear_form()
+
+LUA)
+function bear_form()
+local i,x=1,0
+while (UnitBuff("target",i))
+do if (UnitBuff("target",i)=="Interface\\Icons\\Ability_Racial_BearForm")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then cast("Dire Bear Form")
+end
+end
