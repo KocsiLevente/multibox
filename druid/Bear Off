@@ -1,0 +1,18 @@
+Bear Off)
+/target Yxon
+/script bear_form_off()
+
+LUA)
+function bear_form_off()
+local i,x=1,0
+while (UnitBuff("target",i))
+do if (UnitBuff("target",i)=="Interface\\Icons\\Ability_Racial_BearForm")
+then x=1
+end
+i=i+1
+end
+if (x==1)
+then
+cast("Dire Bear Form")
+end
+end
