@@ -30,7 +30,10 @@ end
 function shadow_priest()
 shadow_pain()
 cast("Mind Blast")
+if not CastingBarFrame.channeling
+then
 CastSpellByName("Mind Flay(Rank 2)")
+end
 end
 
 function shadow_pain()
