@@ -1,23 +1,23 @@
-<Label one local SendWinM wow1>
-<Label two local SendWinM wow2>
-<Label three local SendWinM wow3>
-<Label four local SendWinM wow4>
-<Label five local SendWinM wow5>
-<Label six local SendWinM wow6>
-<Label seven local SendWinM wow7>
-<Label eight local SendWinM wow8>
-<Label nine local SendWinM wow9>
-<Label ten local SendWinM wow10>
-<Label eleven local SendWinM wow11>
-<Label twelve local SendWinM wow12>
-<Label thirteen local SendWinM wow13>
-<Label fourteen local SendWinM wow14>
-<Label fifteen local SendWinM wow15>
-<Label sixteen local SendWinM wow16>
-<Label seventeen local SendWinM wow17>
-<Label eighteen local SendWinM wow18>
-<Label nineteen local SendWinM wow19>
-<Label twenty local SendWinM wow20>
+<Label one local SendWinM gaelber1>
+<Label two local SendWinM llanewrynn2>
+<Label three local SendWinM yxon3>
+<Label four local SendWinM kearlah4>
+<Label five local SendWinM illumyn5>
+<Label six local SendWinM dreamblast6>
+<Label seven local SendWinM skyx7>
+<Label eight local SendWinM uyalin8>
+<Label nine local SendWinM dorothy9>
+<Label ten local SendWinM tygerra10>
+<Label eleven local SendWinM dorkilla11>
+<Label twelve local SendWinM reimus12>
+<Label thirteen local SendWinM necropoly13>
+<Label fourteen local SendWinM vibranium14>
+<Label fifteen local SendWinM havox15>
+<Label sixteen local SendWinM eoro16>
+<Label seventeen local SendWinM livingbomb17>
+<Label eighteen local SendWinM skyfire18>
+<Label nineteen local SendWinM lazarrus19>
+<Label twenty local SendWinM paladino20>
 <Label twentyone local SendWinM wow21>
 <Label twentytwo local SendWinM wow22>
 <Label twentythree local SendWinM wow23>
@@ -38,6 +38,6 @@
 <Label thirtyeight local SendWinM wow38>
 <Label thirtynine local SendWinM wow39>
 <Label fourty local SendWinM wow40>
-<MovementHotKey 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, R, T, Z, Y, X, I, J, Space>
+<MovementHotKey 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, R, T, Z, Y, X, I, J, K, Home, Space>
 <SendLabel one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty, thirtyone, thirtytwo, thirtythree, thirtyfour, thirtyfive, thirtysix, thirtyseven, thirtyeight, thirtynine, fourty>
 <Key %Trigger%>
