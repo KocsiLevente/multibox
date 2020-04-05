@@ -18,26 +18,6 @@
 <Label eighteen local SendWinM skyfire18>
 <Label nineteen local SendWinM lazarrus19>
 <Label twenty local SendWinM paladino20>
-<Label twentyone local SendWinM wow21>
-<Label twentytwo local SendWinM wow22>
-<Label twentythree local SendWinM wow23>
-<Label twentyfour local SendWinM wow24>
-<Label twentyfive local SendWinM wow25>
-<Label twentysix local SendWinM wow26>
-<Label twentyseven local SendWinM wow27>
-<Label twentyeight local SendWinM wow28>
-<Label twentynine local SendWinM wow29>
-<Label thirty local SendWinM wow30>
-<Label thirtyone local SendWinM wow31>
-<Label thirtytwo local SendWinM wow32>
-<Label thirtythree local SendWinM wow33>
-<Label thirtyfour local SendWinM wow34>
-<Label thirtyfive local SendWinM wow35>
-<Label thirtysix local SendWinM wow36>
-<Label thirtyseven local SendWinM wow37>
-<Label thirtyeight local SendWinM wow38>
-<Label thirtynine local SendWinM wow39>
-<Label fourty local SendWinM wow40>
 <MovementHotKey 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, R, T, Z, Y, X, I, J, K, Home, Space>
-<SendLabel one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty, thirtyone, thirtytwo, thirtythree, thirtyfour, thirtyfive, thirtysix, thirtyseven, thirtyeight, thirtynine, fourty>
+<SendLabel one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty>
 <Key %Trigger%>
