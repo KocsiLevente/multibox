@@ -13,7 +13,7 @@ end
 function reset_mode()
 if (UnitName("target")==("Gaelber"))
 then
-SendChatMessage("Reset!")
+SendChatMessage("Mode reset!")
 end
 end
 
