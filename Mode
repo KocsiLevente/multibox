@@ -3,4 +3,30 @@ Mode)
 
 LUA)
 function change_mode()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+reset_mode()
+venoxis_mode()
+mandokir_mode()
+end
+
+function reset_mode()
+if (UnitName("target")==("Gaelber"))
+then
+SendChatMessage("Reset!")
+end
+end
+
+function venoxis_mode()
+if (UnitName("target")==("High Priestess Venoxis"))
+then
+SendChatMessage("%t mode enabled!")
+end
+end
+
+function mandokir_mode()
+if (UnitName("target")==("Bloodlord Mandokir"))
+then
+SendChatMessage("%t mode enabled!")
+end
 end
