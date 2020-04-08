@@ -1,0 +1,6 @@
+Mode)
+/script change_mode()
+
+LUA)
+function change_mode()
+end
