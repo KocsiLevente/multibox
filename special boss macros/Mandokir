@@ -1,0 +1,19 @@
+Mandokir)
+/script mandokir()
+
+LUA)
+function mandokir()
+if (GetRaidTargetIndex("player")==8)
+then
+if (GetRaidTargetIndex("target")==7)
+then
+return
+else
+SendChatMessage("Threatening Gaze on me!")
+SpellStopCasting()
+TargetByName("Bloodlord Mandokir")
+end
+else
+dps_cross()
+end
+end
