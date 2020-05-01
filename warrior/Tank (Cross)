@@ -27,7 +27,6 @@ for i=1,10
 do TargetNearestEnemy()
 if (GetRaidTargetIndex("target")==7)
 then
-SendChatMessage("Targeted %t!")
 return
 else
 TargetUnit("player")
