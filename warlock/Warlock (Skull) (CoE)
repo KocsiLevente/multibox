@@ -71,7 +71,6 @@ TargetByName("Gaelber")
 TargetUnit("targettarget")
 if (GetRaidTargetIndex("target")==8)
 then
-SendChatMessage("Targeted %t!")
 return
 else
 TargetByName("Llanewrynn")
@@ -79,7 +78,6 @@ TargetUnit("targettarget")
 end
 if (GetRaidTargetIndex("target")==8)
 then
-SendChatMessage("Targeted %t!")
 return
 else
 TargetByName("Yxon")
@@ -87,7 +85,6 @@ TargetUnit("targettarget")
 end
 if (GetRaidTargetIndex("target")==8)
 then
-SendChatMessage("Targeted %t!")
 return
 else
 tab_target_skull()
@@ -99,7 +96,6 @@ for i=1,10
 do TargetNearestEnemy()
 if (GetRaidTargetIndex("target")==8)
 then
-SendChatMessage("Targeted %t!")
 return
 else
 TargetUnit("player")
