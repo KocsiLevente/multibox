@@ -1,0 +1,13 @@
+Pull (Skull))
+/script pull_skull()
+
+LUA)
+function pull_skull()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==8)
+then
+CastSpellByName("Faerie Fire (Feral)(Rank 4)")
+end
+end
+end
