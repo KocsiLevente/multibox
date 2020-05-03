@@ -11,6 +11,8 @@ Druid Buffs)
 /script gift_wild()
 /target Llanewrynn
 /script thorns()
+/target Yxon
+/script thorns()
 
 LUA)
 function gift_wild()
