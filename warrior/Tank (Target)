@@ -3,6 +3,9 @@ Tank (Target))
 
 LUA)
 function tank()
+if (UnitName("target")==("Gaelber"))
+then
+else
 if (UnitMana("player")>=12)
 then
 cast("Shield Slam")
@@ -13,5 +16,6 @@ then
 cast("Revenge")
 else
 cast("Bloodrage")
+end
 end
 end
