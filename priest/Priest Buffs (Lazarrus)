@@ -1,0 +1,48 @@
+Priest Buffs)
+/target Gaelber
+/script shadow_prot()
+/target Dreamblast
+/script shadow_prot()
+/target Necropoly
+/script shadow_prot()
+/target Lazarrus
+/script shadow_prot()
+/script shadowform()
+/script inner_fire()
+
+LUA)
+function inner_focus()
+cast("Inner Focus")
+end
+
+function shadow_prot()
+inner_focus()
+local i,x=1,0
+while (UnitBuff("target",i))
+do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Holy_PrayerofShadowProtection")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then cast("Prayer of Shadow Protection")
+end
+end
+
+function inner_fire()
+cast("Inner Fire")
+end
+
+function shadowform()
+inner_focus()
+local i,x=1,0
+while (UnitBuff("target",i))
+do if (UnitBuff("target",i)=="Interface\\Icons\\Spell_Shadow_Shadowform")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then cast("Shadowform")
+end
+end
