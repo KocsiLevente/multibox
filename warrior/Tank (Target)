@@ -1,0 +1,17 @@
+Tank (Target))
+/script tank()
+
+LUA)
+function tank()
+if (UnitMana("player")>=12)
+then
+cast("Shield Slam")
+cast("Sunder Armor")
+end
+if (UnitMana("player")>=5)
+then
+cast("Revenge")
+else
+cast("Bloodrage")
+end
+end
