@@ -32,7 +32,7 @@ if (x==0)
 then
 TargetByName("Helaith")
 cast("Demonic Sacrifice")
-if (UnitMana("player")>=1373)
+if (UnitMana("player")>=823)
 then cast("Summon Succubus")
 else
 cast("Life Tap")
