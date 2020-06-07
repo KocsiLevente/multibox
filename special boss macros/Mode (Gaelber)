@@ -8,6 +8,7 @@ zg_modes()
 aq20_modes()
 mc_modes()
 worldboss_modes()
+unique_modes()
 end
 
 function zg_modes()
@@ -47,6 +48,10 @@ function worldboss_modes()
 azuregos_mode()
 kazzak_mode()
 emeriss_mode()
+end
+
+function unique_modes()
+firelord_mode()
 end
 
 function reset_mode()
@@ -270,6 +275,14 @@ if (UnitName("target")==("Emeriss"))
 then
 enabed()
 EquipSet("Full Nature")
+end
+end
+
+function firelord_mode()
+if (UnitName("target")==("Firelord"))
+then
+enabed()
+EquipSet("Full Fire")
 end
 end
 
