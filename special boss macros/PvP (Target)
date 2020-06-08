@@ -1,0 +1,9 @@
+PvP)
+/script pvp()
+
+LUA)
+function pvp()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+attack()
+end
