@@ -294,6 +294,9 @@ if (UnitName("target")==("Glordrum Steelbeard"))
 then
 SendChatMessage("PvP mode enabled!")
 EquipSet("Normal")
+PickupAction(53)
+PlaceAction(1)
+PlaceAction(53)
 end
 end
 
