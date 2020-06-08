@@ -9,6 +9,7 @@ aq20_modes()
 mc_modes()
 worldboss_modes()
 unique_modes()
+pvp_mode()
 end
 
 function zg_modes()
@@ -137,7 +138,7 @@ end
 function rajaxx_mode()
 if (UnitName("target")==("Lieutenant General Andorov"))
 then
-enabled()
+SendChatMessage("General Rajaxx mode enabled!")
 EquipSet("Normal")
 end
 end
@@ -283,6 +284,14 @@ if (UnitName("target")==("Firelord"))
 then
 enabed()
 EquipSet("Full Fire")
+end
+end
+
+function pvp_mode()
+if (UnitName("target")==("Glordrum Steelbeard"))
+then
+SendChatMessage("PvP mode enabled!")
+EquipSet("Normal")
 end
 end
 
