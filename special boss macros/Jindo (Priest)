@@ -13,8 +13,7 @@ end
 if (x==0)
 then
 TargetByName("Shade of Jin'do")
-cast("Mind Blast")
-cast("Mind Flay")
+attack()
 else
 pvp()
 end
