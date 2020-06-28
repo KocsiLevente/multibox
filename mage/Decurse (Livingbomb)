@@ -1,14 +1,5 @@
 Decurse)
-/target Llanewrynn
-/script decurse()
-/target Skyx
-/script decurse()
-/target Livingbomb
-/script decurse()
-/target Reimus
-/script decurse()
-/target Tygerra
-/script decurse()
+/script decurse_prio()
 
 LUA)
 function decurse()
@@ -19,4 +10,68 @@ then
 cast("Remove Lesser Curse")
 end
 end
+end
+
+function dps_after_decurse()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+dps_cross()
+end
+
+function decurse_prio()
+TargetByName("Llanewrynn")
+decurse()
+TargetByName("Yxon")
+decurse()
+TargetByName("Illumyn")
+decurse()
+TargetByName("Dreamblast")
+decurse()
+TargetByName("Skyx")
+decurse()
+decurse_raid()
+dps_after_decurse()
+end
+
+function decurse_raid()
+TargetUnit("raid1")
+decurse()
+TargetUnit("raid2")
+decurse()
+TargetUnit("raid3")
+decurse()
+TargetUnit("raid4")
+decurse()
+TargetUnit("raid5")
+decurse()
+TargetUnit("raid6")
+decurse()
+TargetUnit("raid7")
+decurse()
+TargetUnit("raid8")
+decurse()
+TargetUnit("raid9")
+decurse()
+TargetUnit("raid10")
+decurse()
+TargetUnit("raid11")
+decurse()
+TargetUnit("raid12")
+decurse()
+TargetUnit("raid13")
+decurse()
+TargetUnit("raid14")
+decurse()
+TargetUnit("raid15")
+decurse()
+TargetUnit("raid16")
+decurse()
+TargetUnit("raid17")
+decurse()
+TargetUnit("raid18")
+decurse()
+TargetUnit("raid19")
+decurse()
+TargetUnit("raid20")
+decurse()
 end
