@@ -1,0 +1,21 @@
+Jindo)
+/script jindo()
+
+LUA)
+function jindo()
+local i,x=1,0
+while (UnitDebuff("target",i))
+do if (UnitDebuff("player",i)=="Interface\\Icons\\Spell_Shadow_UnholyFrenzy")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then
+TargetByName("Shade of Jin'do")
+cast("Mind Blast")
+cast("Mind Flay")
+else
+pvp()
+end
+end
