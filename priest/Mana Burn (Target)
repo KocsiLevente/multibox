@@ -1,0 +1,12 @@
+Mana Burn)
+/script mana_burn()
+
+LUA)
+function mana_burn()
+if (UnitMana("target")<500)
+then
+cast("Mana Burn")
+else
+attack()
+end
+end
