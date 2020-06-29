@@ -3,6 +3,8 @@ Mode)
 
 LUA)
 function change_mode()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
 reset_mode()
 zg_modes()
 aq20_modes()
