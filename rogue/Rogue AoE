@@ -1,0 +1,9 @@
+Rogue AoE)
+/script rogue_aoe()
+
+LUA)
+function rogue_aoe()
+cast("Blade Flurry")
+cast("Adrenaline Rush")
+sinister_eviscerate()
+end
