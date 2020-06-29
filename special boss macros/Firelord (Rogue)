@@ -1,0 +1,23 @@
+Firelord)
+/script firelord()
+
+LUA)
+function firelord()
+for i=1,10
+do TargetNearestEnemy()
+if (UnitName("target")==("Lava Spawn"))
+then
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+dps_spawn()
+end
+else
+TargetByName("Firelord")
+dps_cross()
+end
+end
+end
+
+function dps_spawn()
+attack()
+end
