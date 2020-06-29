@@ -10,7 +10,7 @@ then x=1
 end
 i=i+1
 end
-if (x==0)
+if (x==1)
 then
 TargetByName("Shade of Jin'do")
 cast("Fire Blast")
