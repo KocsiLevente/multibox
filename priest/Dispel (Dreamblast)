@@ -1,10 +1,5 @@
 Dispel)
-/target Gaelber
-/script dispel()
-/target Skyfire
-/script dispel()
-/target Dorkilla
-/script dispel()
+/script dispel_prio()
 
 LUA)
 function dispel()
@@ -15,4 +10,66 @@ then
 cast("Dispel Magic")
 end
 end
+end
+
+function heal_after_dispel()
+heal_raid()
+end
+
+function dispel_prio()
+TargetByName("Gaelber")
+dispel()
+TargetByName("Llanewrynn")
+dispel()
+TargetByName("Kearlah")
+dispel()
+TargetByName("Illumyn")
+dispel()
+TargetByName("Dreamblast")
+dispel()
+dispel_raid()
+heal_after_dispel()
+end
+
+function dispel_raid()
+TargetUnit("raid1")
+dispel()
+TargetUnit("raid2")
+dispel()
+TargetUnit("raid3")
+dispel()
+TargetUnit("raid4")
+dispel()
+TargetUnit("raid5")
+dispel()
+TargetUnit("raid6")
+dispel()
+TargetUnit("raid7")
+dispel()
+TargetUnit("raid8")
+dispel()
+TargetUnit("raid9")
+dispel()
+TargetUnit("raid10")
+dispel()
+TargetUnit("raid11")
+dispel()
+TargetUnit("raid12")
+dispel()
+TargetUnit("raid13")
+dispel()
+TargetUnit("raid14")
+dispel()
+TargetUnit("raid15")
+dispel()
+TargetUnit("raid16")
+dispel()
+TargetUnit("raid17")
+dispel()
+TargetUnit("raid18")
+dispel()
+TargetUnit("raid19")
+dispel()
+TargetUnit("raid20")
+dispel()
 end
