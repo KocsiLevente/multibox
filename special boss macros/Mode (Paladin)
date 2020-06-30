@@ -1,0 +1,335 @@
+Mode)
+/script change_mode()
+
+LUA)
+function change_mode()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+reset_mode()
+zg_modes()
+aq20_modes()
+mc_modes()
+worldboss_modes()
+unique_modes()
+pvp_mode()
+end
+
+function zg_modes()
+jeklik_mode()
+venoxis_mode()
+marli_mode()
+mandokir_mode()
+thekal_mode()
+arlokk_mode()
+jindo_mode()
+hakkar_mode()
+end
+
+function aq20_modes()
+kurinnaxx_mode()
+rajaxx_mode()
+buru_mode()
+moam_mode()
+ayamiss_mode()
+ossirian_mode()
+end
+
+function mc_modes()
+lucifron_mode()
+magmadar_mode()
+gehennas_mode()
+garr_mode()
+geddon_mode()
+shazzrah_mode()
+golemagg_mode()
+sulfuron_mode()
+majordomo_mode()
+ragnaros_mode()
+end
+
+function worldboss_modes()
+azuregos_mode()
+kazzak_mode()
+emeriss_mode()
+end
+
+function unique_modes()
+firelord_mode()
+end
+
+function reset_mode()
+if (UnitName("target")==("Gaelber"))
+then
+SendChatMessage("Mode reset!")
+EquipSet("Normal")
+if (GetActionText(2)==("Geddon"))
+then
+PickupAction(57)
+PlaceAction(2)
+PlaceAction(57)
+end
+if (GetActionText(2)==("Cleanse"))
+then
+PickupAction(59)
+PlaceAction(2)
+PlaceAction(59)
+end
+if (GetActionText(2)==("Mandokir"))
+then
+PickupAction(60)
+PlaceAction(2)
+PlaceAction(60)
+end
+end
+end
+
+function jeklik_mode()
+if (UnitName("target")==("High Priestess Jeklik"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function venoxis_mode()
+if (UnitName("target")==("High Priest Venoxis"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function marli_mode()
+if (UnitName("target")==("High Priestess Mar'li"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function mandokir_mode()
+if (UnitName("target")==("Bloodlord Mandokir"))
+then
+enabled()
+EquipSet("Normal")
+PickupAction(60)
+PlaceAction(2)
+PlaceAction(60)
+end
+end
+
+function thekal_mode()
+if (UnitName("target")==("High Priest Thekal"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function arlokk_mode()
+if (UnitName("target")==("High Priestess Arlokk"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function jindo_mode()
+if (UnitName("target")==("Jin'do the Hexxer"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function hakkar_mode()
+if (UnitName("target")==("Hakkar"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function kurinnaxx_mode()
+if (UnitName("target")==("Kurinnaxx"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function rajaxx_mode()
+if (UnitName("target")==("Lieutenant General Andorov"))
+then
+SendChatMessage("General Rajaxx mode enabled!")
+EquipSet("Normal")
+end
+end
+
+function buru_mode()
+if (UnitName("target")==("Buru the Gorger"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function moam_mode()
+if (UnitName("target")==("Moam"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function ayamiss_mode()
+if (UnitName("target")==("Ayamiss the Hunter"))
+then
+enabled()
+EquipSet("Full Nature")
+end
+end
+
+function ossirian_mode()
+if (UnitName("target")==("Ossirian the Unscarred"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function lucifron_mode()
+if (UnitName("target")==("Lucifron"))
+then
+enabled()
+EquipSet("Normal")
+PickupAction(59)
+PlaceAction(2)
+PlaceAction(59)
+end
+end
+
+function magmadar_mode()
+if (UnitName("target")==("Magmadar"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function gehennas_mode()
+if (UnitName("target")==("Gehennas"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function garr_mode()
+if (UnitName("target")==("Garr"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function geddon_mode()
+if (UnitName("target")==("Baron Geddon"))
+then
+enabled()
+EquipSet("Normal")
+PickupAction(57)
+PlaceAction(2)
+PlaceAction(57)
+end
+end
+
+function shazzrah_mode()
+if (UnitName("target")==("Shazzrah"))
+then
+enabled()
+EquipSet("Full Arcane")
+end
+end
+
+function golemagg_mode()
+if (UnitName("target")==("Golemagg the Incinerator"))
+then
+enabled()
+EquipSet("Normal")
+end
+end
+
+function sulfuron_mode()
+if (UnitName("target")==("Sulfuron Harbinger"))
+then
+enabed()
+EquipSet("Normal")
+PickupAction(59)
+PlaceAction(2)
+PlaceAction(59)
+end
+end
+
+function majordomo_mode()
+if (UnitName("target")==("Majordomo Executus"))
+then
+enabed()
+EquipSet("Normal")
+end
+end
+
+function ragnaros_mode()
+if (UnitName("target")==("Ragnaros"))
+then
+enabed()
+EquipSet("Full Fire")
+end
+end
+
+function azuregos_mode()
+if (UnitName("target")==("Azuregos"))
+then
+enabed()
+EquipSet("Full Frost")
+end
+end
+
+function kazzak_mode()
+if (UnitName("target")==("Lord Kazzak"))
+then
+enabed()
+EquipSet("Full Shadow")
+end
+end
+
+function emeriss_mode()
+if (UnitName("target")==("Emeriss"))
+then
+enabed()
+EquipSet("Normal")
+end
+end
+
+function firelord_mode()
+if (UnitName("target")==("Firelord"))
+then
+enabed()
+EquipSet("Normal")
+PickupAction(59)
+PlaceAction(2)
+PlaceAction(59)
+end
+end
+
+function pvp_mode()
+if (UnitName("target")==("Glordrum Steelbeard"))
+then
+SendChatMessage("PvP mode enabled!")
+EquipSet("Normal")
+end
+end
+
+function enabled()
+SendChatMessage("%t mode enabled!")
+end
