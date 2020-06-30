@@ -1,0 +1,33 @@
+Heal (NoMacro))
+...
+
+LUA)
+function h_80_t()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.8)
+then
+cast("Flash of Light")
+end
+end
+end
+
+function h_70_h()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.7)
+then
+cast("Flash of Light")
+end
+end
+end
+
+function h_60_d()
+if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
+then
+if (UnitHealth("target")/UnitHealthMax("target")<0.6)
+then
+cast("Flash of Light")
+end
+end
+end
