@@ -275,7 +275,7 @@ end
 function sulfuron_mode()
 if (UnitName("target")==("Sulfuron Harbinger"))
 then
-enabed()
+enabled()
 EquipSet("Normal")
 end
 end
@@ -283,7 +283,7 @@ end
 function majordomo_mode()
 if (UnitName("target")==("Majordomo Executus"))
 then
-enabed()
+enabled()
 EquipSet("Normal")
 end
 end
@@ -291,7 +291,7 @@ end
 function ragnaros_mode()
 if (UnitName("target")==("Ragnaros"))
 then
-enabed()
+enabled()
 EquipSet("Full Fire")
 end
 end
@@ -299,7 +299,7 @@ end
 function azuregos_mode()
 if (UnitName("target")==("Azuregos"))
 then
-enabed()
+enabled()
 EquipSet("Full Frost")
 end
 end
@@ -307,7 +307,7 @@ end
 function kazzak_mode()
 if (UnitName("target")==("Lord Kazzak"))
 then
-enabed()
+enabled()
 EquipSet("Full Shadow")
 end
 end
@@ -315,7 +315,7 @@ end
 function emeriss_mode()
 if (UnitName("target")==("Emeriss"))
 then
-enabed()
+enabled()
 EquipSet("Normal")
 end
 end
@@ -323,7 +323,7 @@ end
 function firelord_mode()
 if (UnitName("target")==("Firelord"))
 then
-enabed()
+enabled()
 EquipSet("Normal")
 PickupAction(56)
 PlaceAction(2)
