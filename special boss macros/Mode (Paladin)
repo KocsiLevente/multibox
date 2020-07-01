@@ -320,7 +320,7 @@ end
 function firelord_mode()
 if (UnitName("target")==("Firelord"))
 then
-enabed()
+enabled()
 EquipSet("Normal")
 PickupAction(59)
 PlaceAction(2)
