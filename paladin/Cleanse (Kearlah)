@@ -1,14 +1,5 @@
 Cleanse)
-/target Gaelber
-/script cleanse()
-/target Kearlah
-/script cleanse()
-/target Dreamblast
-/script cleanse()
-/target Havox
-/script cleanse()
-/target Dorkilla
-/script cleanse()
+/script cleanse_prio()
 
 LUA)
 function cleanse()
@@ -19,4 +10,66 @@ then
 cast("Cleanse")
 end
 end
+end
+
+function heal_after_cleanse()
+heal_raid()
+end
+
+function cleanse_prio()
+TargetByName("Gaelber")
+cleanse()
+TargetByName("Llanewrynn")
+cleanse()
+TargetByName("Kearlah")
+cleanse()
+TargetByName("Illumyn")
+cleanse()
+TargetByName("Paladino")
+cleanse()
+cleanse_raid()
+heal_after_cleanse()
+end
+
+function cleanse_raid()
+TargetUnit("raid1")
+cleanse()
+TargetUnit("raid2")
+cleanse()
+TargetUnit("raid3")
+cleanse()
+TargetUnit("raid4")
+cleanse()
+TargetUnit("raid5")
+cleanse()
+TargetUnit("raid6")
+cleanse()
+TargetUnit("raid7")
+cleanse()
+TargetUnit("raid8")
+cleanse()
+TargetUnit("raid9")
+cleanse()
+TargetUnit("raid10")
+cleanse()
+TargetUnit("raid11")
+cleanse()
+TargetUnit("raid12")
+cleanse()
+TargetUnit("raid13")
+cleanse()
+TargetUnit("raid14")
+cleanse()
+TargetUnit("raid15")
+cleanse()
+TargetUnit("raid16")
+cleanse()
+TargetUnit("raid17")
+cleanse()
+TargetUnit("raid18")
+cleanse()
+TargetUnit("raid19")
+cleanse()
+TargetUnit("raid20")
+cleanse()
 end
