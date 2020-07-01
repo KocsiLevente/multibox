@@ -1,0 +1,32 @@
+Paladin)
+/script heal_raid()
+
+LUA)
+function heal_raid()
+heal_tanks()
+heal_healers()
+end
+
+function heal_tanks()
+TargetByName("Yxon",true)
+h_85_t()
+TargetByName("Gaelber",true)
+h_85_t()
+TargetByName("Llanewrynn",true)
+h_85_t()
+end
+
+function heal_healers()
+TargetByName("Uyalin",true)
+h_85_t()
+TargetByName("Dreamblast",true)
+h_85_t()
+TargetByName("Skyx",true)
+h_85_t()
+TargetByName("Paladino",true)
+h_85_t()
+TargetByName("Kearlah",true)
+h_85_t()
+TargetByName("Illumyn",true)
+h_85_t()
+end
