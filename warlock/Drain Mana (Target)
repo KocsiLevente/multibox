@@ -5,7 +5,9 @@ LUA)
 function drain_mana()
 if not CastingBarFrame.channeling
 then
-if (UnitMana("target")<200)
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (UnitMana("target")>200)
 then
 cast("Drain Mana")
 else
