@@ -3,7 +3,9 @@ Mana Burn)
 
 LUA)
 function mana_burn()
-if (UnitMana("target")<500)
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (UnitMana("target")>500)
 then
 cast("Mana Burn")
 else
