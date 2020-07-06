@@ -4,7 +4,7 @@ Jindo)
 LUA)
 function jindo()
 local i,x=1,0
-while (UnitDebuff("target",i))
+while (UnitDebuff("player",i))
 do if (UnitDebuff("player",i)=="Interface\\Icons\\Spell_Shadow_UnholyFrenzy")
 then x=1
 end
