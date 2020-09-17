@@ -1,0 +1,7 @@
+Burst Heal)
+/target Gaelber
+/cast Inner Focus
+/cast Flash Heal
+
+LUA)
+...

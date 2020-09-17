@@ -1,8 +1,8 @@
 Tank (Target))
-/script tank()
+/script tank_warrior()
 
 LUA)
-function tank()
+function tank_warrior()
 if (UnitName("target")==("<tank_name>"))
 then
 else

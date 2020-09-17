@@ -8,6 +8,7 @@ do TargetNearestEnemy()
 if (GetRaidTargetIndex("target")==8)
 then
 CastSpellByName("Faerie Fire (Feral)(Rank 4)")
+return
 end
 end
 end

@@ -30,7 +30,7 @@ i=i+1
 end
 if (x==0)
 then
-TargetByName("Disvina")
+TargetByName("Helaith")
 cast("Demonic Sacrifice")
 if (UnitMana("player")>=823)
 then cast("Summon Succubus")
@@ -44,3 +44,6 @@ function warlock_buffs()
 demon_armor()
 demonic_sacrifice()
 end
+
+Templates)
+<succubus_name> <Helaith, Lynrah, Disvina, Mirthea>

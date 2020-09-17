@@ -60,6 +60,38 @@ end
 function reset_mode()
 if (UnitName("target")==("Gaelber"))
 then
+if (GetRaidTargetIndex("target")==2)
+then
+EquipSet("Full Fire")
+local base, total, bonus, minus = UnitResistance("player",2)
+SendChatMessage("Fire: "..total)
+end
+if (GetRaidTargetIndex("target")==4)
+then
+EquipSet("Full Nature")
+local base, total, bonus, minus = UnitResistance("player",3)
+SendChatMessage("Nature: "..total)
+end
+if (GetRaidTargetIndex("target")==3)
+then
+EquipSet("Full Shadow")
+local base, total, bonus, minus = UnitResistance("player",5)
+SendChatMessage("Shadow: "..total)
+end
+if (GetRaidTargetIndex("target")==6)
+then
+EquipSet("Full Frost")
+local base, total, bonus, minus = UnitResistance("player",4)
+SendChatMessage("Frost: "..total)
+end
+if (GetRaidTargetIndex("target")==5)
+then
+EquipSet("Full Arcane")
+local base, total, bonus, minus = UnitResistance("player",6)
+SendChatMessage("Arcane: "..total)
+end
+if (GetRaidTargetIndex("target")==7)
+then
 SendChatMessage("Mode reset!")
 EquipSet("Normal")
 if (GetActionText(2)==("Prayer of Healing"))
@@ -85,6 +117,7 @@ then
 PickupAction(60)
 PlaceAction(2)
 PlaceAction(60)
+end
 end
 end
 end

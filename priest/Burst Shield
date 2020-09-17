@@ -1,0 +1,8 @@
+Burst Shield)
+/target Gaelber
+/cast Power Word: Shield
+/target Llanewrynn
+/cast Greater Heal
+
+LUA)
+...

@@ -1,37 +1,16 @@
-Tank (Skull))
-/script tank_skull()
+Tank (Target))
+/script tank_druid()
 
 LUA)
-function tank_skull()
-if (GetRaidTargetIndex("target")==8)
-then
-tank()
-else
-tab_target_skull()
-end
-end
-
-function tank()
-if (UnitMana("player")>=25)
+function tank_druid()
+if (UnitMana("player")>=20)
 then
 cast("Swipe")
 end
-if (UnitMana("player")>=10)
+if (UnitMana("player")>=7)
 then
 cast("Maul")
 else
 cast("Enrage")
-end
-end
-
-function tab_target_skull()
-for i=1,10
-do TargetNearestEnemy()
-if (GetRaidTargetIndex("target")==8)
-then
-return
-else
-TargetUnit("player")
-end
 end
 end

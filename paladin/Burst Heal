@@ -1,0 +1,7 @@
+Burst Heal)
+/target Gaelber
+/cast Divine Favor
+/cast Flash of Light
+
+LUA)
+...
