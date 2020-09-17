@@ -3,7 +3,7 @@ Tank (Target))
 
 LUA)
 function tank()
-if (UnitName("target")==("Gaelber"))
+if (UnitName("target")==("<tank_name>"))
 then
 else
 if (UnitMana("player")>=12)
@@ -19,3 +19,6 @@ cast("Bloodrage")
 end
 end
 end
+
+Templates)
+<tank_name> <Gaelber, Llanewrynn, Yxon>
