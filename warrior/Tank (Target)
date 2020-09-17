@@ -6,14 +6,18 @@ function tank()
 if (UnitName("target")==("<tank_name>"))
 then
 else
+if (UnitMana("player")>=5)
+then
+cast("Revenge")
 if (UnitMana("player")>=12)
 then
 cast("Shield Slam")
 cast("Sunder Armor")
-end
-if (UnitMana("player")>=5)
+if (UnitMana("player")>=50)
 then
-cast("Revenge")
+cast("Heroic Strike")
+end
+end
 else
 cast("Bloodrage")
 end

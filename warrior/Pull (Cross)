@@ -1,13 +1,14 @@
-Pull (Cross))
-/script pull_cross()
+Pull (Target))
+/script pull()
 
 LUA)
-function pull_cross()
+function pull()
 for i=1,10
 do TargetNearestEnemy()
 if (GetRaidTargetIndex("target")==7)
 then
 cast("Shoot Crossbow")
+return
 end
 end
 end
