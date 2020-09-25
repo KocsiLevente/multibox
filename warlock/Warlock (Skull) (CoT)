@@ -16,7 +16,7 @@ if (UnitMana("player")>=376)
 then
 PickupAction(63)
 PlaceAction(62)
-shadow_bolt()
+curse_shadow()
 else
 if (UnitHealth("player")/UnitHealthMax("player")>0.3)
 then
@@ -32,8 +32,23 @@ end
 end
 end
 
-function shadow_bolt()
+function curse_shadow()
+curse_of_tongues()
 cast("Shadow Bolt")
+end
+
+function curse_of_tongues()
+local i,x=1,0
+while (UnitDebuff("target",i))
+do if (UnitDebuff("target",i)=="Interface\\Icons\\Spell_Shadow_CurseOfTongues")
+then x=1
+end
+i=i+1
+end
+if (x==0)
+then
+cast("Curse of Tongues")
+end
 end
 
 function target_skull()
