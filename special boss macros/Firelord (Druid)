@@ -3,21 +3,64 @@ Firelord)
 
 LUA)
 function firelord()
-for i=1,10
-do TargetNearestEnemy()
-if (UnitName("target")==("Lava Spawn"))
-then
-if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
-then
 dps_spawn()
-end
-else
-TargetByName("Firelord")
-dps_cross()
-end
-end
+dps_firelord()
 end
 
 function dps_spawn()
-cast("Starfire")
+if (UnitName("target")==("Lava Spawn"))
+then
+attack()
+return
+end
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (UnitName("target")==("Lava Spawn"))
+then
+attack()
+return
+end
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+if (UnitName("target")==("Lava Spawn"))
+then
+attack()
+return
+end
+TargetByName("Yxon")
+TargetUnit("targettarget")
+if (UnitName("target")==("Lava Spawn"))
+then
+attack()
+return
+end
+end
+
+function dps_firelord()
+if (UnitName("target")==("Firelord"))
+then
+attack()
+return
+end
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (UnitName("target")==("Firelord"))
+then
+attack()
+return
+end
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+if (UnitName("target")==("Firelord"))
+then
+attack()
+return
+end
+TargetByName("Yxon")
+TargetUnit("targettarget")
+if (UnitName("target")==("Firelord"))
+then
+attack()
+return
+end
 end
