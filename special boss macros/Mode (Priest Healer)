@@ -94,6 +94,18 @@ if (GetRaidTargetIndex("target")==7)
 then
 SendChatMessage("Mode reset!")
 EquipSet("Normal")
+if (GetActionText(2)==("Dispel"))
+then
+PickupAction(53)
+PlaceAction(2)
+PlaceAction(53)
+end
+if (GetActionText(2)==("Firelord"))
+then
+PickupAction(54)
+PlaceAction(2)
+PlaceAction(54)
+end
 if (GetActionText(2)==("Prayer of Healing"))
 then
 PickupAction(56)
@@ -106,16 +118,13 @@ PickupAction(57)
 PlaceAction(2)
 PlaceAction(57)
 end
-if (GetActionText(2)==("Dispel"))
+if (GetActionText(2)==("Mandokir"))
 then
 PickupAction(59)
 PlaceAction(2)
 PlaceAction(59)
-end
-if (GetActionText(2)==("Mandokir"))
-then
 PickupAction(60)
-PlaceAction(2)
+PlaceAction(3)
 PlaceAction(60)
 end
 end
@@ -151,8 +160,11 @@ if (UnitName("target")==("Bloodlord Mandokir"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(60)
+PickupAction(59)
 PlaceAction(2)
+PlaceAction(59)
+PickupAction(60)
+PlaceAction(3)
 PlaceAction(60)
 end
 end
@@ -242,9 +254,9 @@ if (UnitName("target")==("Lucifron"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(53)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(53)
 end
 end
 
@@ -304,9 +316,9 @@ if (UnitName("target")==("Sulfuron Harbinger"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(53)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(53)
 end
 end
 
@@ -355,9 +367,9 @@ if (UnitName("target")==("Firelord"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(54)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(54)
 end
 end
 
