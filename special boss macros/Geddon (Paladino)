@@ -1,0 +1,12 @@
+Geddon)
+/script geddon()
+
+LUA)
+function geddon()
+if (GetRaidTargetIndex("player")==8)
+then
+cast("Divine Shield")
+else
+heal_raid()
+end
+end
