@@ -1,0 +1,37 @@
+Firelord)
+/script firelord()
+
+LUA)
+function firelord()
+dps_spawn()
+heal_raid()
+end
+
+function dps_spawn()
+if (UnitName("target")==("Lava Spawn"))
+then
+cast("Smite")
+return
+end
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (UnitName("target")==("Lava Spawn"))
+then
+cast("Smite")
+return
+end
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+if (UnitName("target")==("Lava Spawn"))
+then
+cast("Smite")
+return
+end
+TargetByName("Yxon")
+TargetUnit("targettarget")
+if (UnitName("target")==("Lava Spawn"))
+then
+cast("Smite")
+return
+end
+end
