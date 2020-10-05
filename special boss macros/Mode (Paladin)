@@ -96,20 +96,23 @@ SendChatMessage("Mode reset!")
 EquipSet("Normal")
 if (GetActionText(2)==("Geddon"))
 then
+PickupAction(58)
+PlaceAction(2)
+PlaceAction(58)
+end
+if (GetActionText(2)==("Cleanse"))
+then
 PickupAction(57)
 PlaceAction(2)
 PlaceAction(57)
 end
-if (GetActionText(2)==("Cleanse"))
+if (GetActionText(2)==("Mandokir"))
 then
 PickupAction(59)
 PlaceAction(2)
 PlaceAction(59)
-end
-if (GetActionText(2)==("Mandokir"))
-then
 PickupAction(60)
-PlaceAction(2)
+PlaceAction(3)
 PlaceAction(60)
 end
 end
@@ -145,8 +148,11 @@ if (UnitName("target")==("Bloodlord Mandokir"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(60)
+PickupAction(59)
 PlaceAction(2)
+PlaceAction(59)
+PickupAction(60)
+PlaceAction(3)
 PlaceAction(60)
 end
 end
@@ -236,9 +242,9 @@ if (UnitName("target")==("Lucifron"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(57)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(57)
 end
 end
 
@@ -271,9 +277,9 @@ if (UnitName("target")==("Baron Geddon"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(57)
+PickupAction(58)
 PlaceAction(2)
-PlaceAction(57)
+PlaceAction(58)
 end
 end
 
@@ -298,9 +304,9 @@ if (UnitName("target")==("Sulfuron Harbinger"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(57)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(57)
 end
 end
 
@@ -333,9 +339,9 @@ if (UnitName("target")==("Lord Kazzak"))
 then
 enabled()
 EquipSet("Full Shadow")
-PickupAction(59)
+PickupAction(57)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(57)
 end
 end
 
@@ -344,9 +350,9 @@ if (UnitName("target")==("Emeriss"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(57)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(57)
 end
 end
 
@@ -355,9 +361,9 @@ if (UnitName("target")==("Firelord"))
 then
 enabled()
 EquipSet("Normal")
-PickupAction(59)
+PickupAction(57)
 PlaceAction(2)
-PlaceAction(59)
+PlaceAction(57)
 end
 end
 
