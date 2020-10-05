@@ -1,0 +1,14 @@
+Geddon)
+/script geddon()
+
+LUA)
+function geddon()
+if (GetRaidTargetIndex("player")==8)
+then
+SpellStopCasting()
+FollowByName("Yxon")
+else
+FollowByName("Paladino")
+heal_raid()
+end
+end
