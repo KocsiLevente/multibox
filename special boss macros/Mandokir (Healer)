@@ -1,0 +1,12 @@
+Mandokir)
+/script mandokir()
+
+LUA)
+function mandokir()
+if (GetRaidTargetIndex("player")==8)
+then
+SpellStopCasting()
+else
+heal_raid()
+end
+end
