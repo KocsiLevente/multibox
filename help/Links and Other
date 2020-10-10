@@ -16,3 +16,6 @@ Green = 4
 Purple = 3
 Orange = 2
 Yellow = 1
+
+CameraOption)
+SET CameraView 0
