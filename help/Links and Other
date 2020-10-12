@@ -18,4 +18,4 @@ Orange = 2
 Yellow = 1
 
 CameraOption)
-SET CameraView 0
+SET cameraView "0"
