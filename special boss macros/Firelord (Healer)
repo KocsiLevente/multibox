@@ -31,6 +31,7 @@ TargetByName("Yxon")
 TargetUnit("targettarget")
 if (UnitName("target")==("Lava Spawn"))
 then
+cast("Mind Blast")
 cast("Smite")
 return
 end
