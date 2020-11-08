@@ -1,0 +1,51 @@
+Balance (Orange))
+/script dps_orange()
+
+LUA)
+function dps_orange()
+if (GetRaidTargetIndex("target")==2)
+then
+attack()
+else
+target_orange()
+end
+end
+
+function target_orange()
+TargetByName("Skyfire")
+moonkin_form()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+if (GetRaidTargetIndex("target")==2)
+then
+return
+else
+TargetByName("Llanewrynn")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==2)
+then
+return
+else
+TargetByName("Yxon")
+TargetUnit("targettarget")
+end
+if (GetRaidTargetIndex("target")==2)
+then
+return
+else
+tab_target_orange()
+end
+end
+
+function tab_target_orange()
+for i=1,10
+do TargetNearestEnemy()
+if (GetRaidTargetIndex("target")==2)
+then
+return
+else
+TargetUnit("player")
+end
+end
+end
