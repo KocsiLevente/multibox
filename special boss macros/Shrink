@@ -1,0 +1,9 @@
+Shrink)
+/script shrink()
+
+LUA)
+function shrink()
+TargetByName("Gaelber")
+TargetUnit("targettarget")
+UseAction(53)
+end
