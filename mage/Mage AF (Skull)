@@ -15,7 +15,7 @@ function attack()
 local evoc, dur_evoc, en_evoc = GetActionCooldown(61)
 if not CastingBarFrame.channeling
 then
-if (UnitMana("player")>=290)
+if (UnitMana("player")>=261)
 then
 PickupAction(63)
 PlaceAction(62)
