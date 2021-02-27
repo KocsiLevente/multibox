@@ -100,7 +100,6 @@ PickupAction(53)
 PlaceAction(2)
 PlaceAction(53)
 end
-end
 EquipSet("Normal")
 if (GetActionText(2)==("PvP"))
 then
