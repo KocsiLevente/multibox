@@ -89,9 +89,6 @@ EquipSet("Full Arcane")
 local base, total, bonus, minus = UnitResistance("player",6)
 SendChatMessage("Arcane: "..total)
 end
-if (GetRaidTargetIndex("target")==7)
-then
-SendChatMessage("Mode reset!")
 if (GetRaidTargetIndex("target")==8)
 then
 SendChatMessage("PvP mode enabled!")
@@ -100,6 +97,9 @@ PickupAction(53)
 PlaceAction(2)
 PlaceAction(53)
 end
+if (GetRaidTargetIndex("target")==7)
+then
+SendChatMessage("Mode reset!")
 EquipSet("Normal")
 if (GetActionText(2)==("PvP"))
 then
