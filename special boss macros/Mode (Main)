@@ -9,7 +9,6 @@ aq20_modes()
 mc_modes()
 worldboss_modes()
 unique_modes()
-pvp_mode()
 end
 
 function zg_modes()
@@ -87,6 +86,11 @@ then
 EquipSet("Full Arcane")
 local base, total, bonus, minus = UnitResistance("player",6)
 SendChatMessage("Arcane: "..total)
+end
+if (GetRaidTargetIndex("target")==8)
+then
+SendChatMessage("PvP mode enabled!")
+EquipSet("Normal")
 end
 if (GetRaidTargetIndex("target")==7)
 then
@@ -317,14 +321,6 @@ if (UnitName("target")==("Firelord"))
 then
 enabled()
 EquipSet("Full Fire")
-end
-end
-
-function pvp_mode()
-if (UnitName("target")==("Glordrum Steelbeard"))
-then
-SendChatMessage("PvP mode enabled!")
-EquipSet("Normal")
 end
 end
 
