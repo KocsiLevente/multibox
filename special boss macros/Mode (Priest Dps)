@@ -94,7 +94,7 @@ then
 SendChatMessage("PvP mode enabled!")
 EquipSet("Normal")
 PickupAction(53)
-PlaceAction(1)
+PlaceAction(2)
 PlaceAction(53)
 end
 if (GetRaidTargetIndex("target")==7)
