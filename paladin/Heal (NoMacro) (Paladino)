@@ -7,7 +7,7 @@ if (UnitHealth("target")/UnitHealthMax("target")>0.0001)
 then
 if (UnitHealth("target")/UnitHealthMax("target")<0.85)
 then
-CastSpellByName("Flash of Light(Rank 3)")
+CastSpellByName("Flash of Light(Rank 4)")
 end
 end
 end
